@@ -1,0 +1,142 @@
+@use "../utilities/v";
+
+// Add Company section -----------------------------
+@keyframes add-comp-appear {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 150px;
+  }
+}
+
+@keyframes add-comp-disappear {
+  0% {
+    height: 150px;
+  }
+
+  100% {
+    height: 0px;
+  }
+}
+
+.fa-check {
+  display: none;
+}
+
+// List Section ------------------------------------
+.company-list-section {
+  padding: 20px 30px;
+}
+
+// List Titles ----
+.company-list-titles {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.company-list-titles h2 {
+  font-size: 22px;
+  margin: 0 auto 0 5px;
+  line-height: 13px;
+}
+
+.company-list-titles div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  margin-left: 5px;
+}
+
+.company-list-titles i {
+  font-size: 20px;
+  margin: 0;
+}
+
+// List Items ----
+.company-list-section .company-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px 0;
+  height: 40px;
+  border-radius: 3px;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.company-list-item div, .company-list-item a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: v.$blue-gray;
+  color: white;
+  height: 100%;
+}
+
+.company-list-item .large {
+  position: relative;
+  flex-grow: 1;
+  padding: 10px 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 10px;
+}
+
+.company-list-item .large p {
+  text-overflow: ellipsis " [..]";
+}
+
+.company-list-item .large div {
+  position: absolute;
+  right: 0;
+  background-color: v.$blue-gray;
+  width: 12px;
+  z-index: 2;
+}
+
+.company-list-item .small {
+  width: 50px;
+  min-width: 50px;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.company-list-item .button-hover:hover {
+  background-color: v.$blue-gray-darker;
+}
+
+.company-list-item p, .company-list-item i {
+  margin: 0;
+}
+
+.company-list-item .remove-comp-button {
+  font-size: 17px;
+}
+
+.company-list-item .remove-comp-button:hover {
+  background-color: v.$red-error;
+  cursor: pointer;
+}
+
+
+// Media Queries ------------------------------------
+@media (max-width:390px) {
+  .company-list-titles h2 {
+    font-size: 18px;
+  }
+
+  .company-list-titles i {
+    font-size: 16px;
+  }
+
+  .company-list-item p {
+    font-size: 13px;
+  }
+}

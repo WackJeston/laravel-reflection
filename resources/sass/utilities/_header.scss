@@ -1,0 +1,70 @@
+@use "v";
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 100px;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
+}
+
+header .header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.header-container h1 {
+  margin-right: auto;
+}
+
+.header-container a {
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  margin-left: 15px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.header-container a:hover {
+  background-color: v.$blue-gray-darker;
+}
+
+
+// Media Queries ------------------------------------
+@media (max-width:410px) {
+  header {
+    height: 80px;
+  }
+
+  .header-container h1 {
+    font-size: 28px;
+  }
+
+  .header-container a {
+    font-size: 12px;
+    margin-left: 5px;
+    padding: 5px 5px;
+  }
+}
+
+@media (min-width:769px){
+  header .header-container {
+    padding: 0;
+    width: 709px
+  }
+}
+
+@media (min-width:1025px){
+  header .header-container {
+    width: 965px
+  }
+}
+
+@media (min-width:1201px){
+
+}

@@ -1,0 +1,155 @@
+@use "v";
+
+body {
+  background-color: v.$background-colour;
+}
+
+body, input, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+section, .form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.1);
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+// Forms --------------------------------------------
+.form .input-container {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: hidden;
+}
+
+.form .input-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form input, .form button, .form .file-input-label, .form .completion-notification {
+  width: 100%;
+  height: 40px;
+  min-height: 40px;
+  background-color: v.$blue-gray-lighter;
+  color: white;
+  border: 1px solid v.$blue-gray-lighter;
+  border-radius: 3px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.form input:focus, .form .file-input-label:hover {
+  background-color: v.$blue-gray-darker;
+  outline: none;
+}
+
+.form .file-input-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form .file-input-label  i{
+  font-size: 16px;
+}
+
+.form .file-input {
+  display: none;
+}
+
+.form .submit {
+  z-index: 2;
+}
+
+.form .close {
+  margin-bottom: 10px;
+}
+
+.form .submit, .form .close {
+  background-color: black;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form .submit:hover, .form .close:hover {
+  background-color: v.$blue-gray-darker;
+}
+
+.form .spacer {
+  min-width: 10px;
+  max-width: 10px;
+}
+
+.form .completion-notification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: v.$green-success;
+  border: none;
+}
+
+.form .cn-error {
+  background-color: v.$red-error;
+}
+
+.form .cn-error i:hover {
+  color: v.$red-error-lighter;
+}
+
+.form .completion-notification i {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.form .completion-notification i:hover {
+  color: v.$green-success-lighter;
+}
+
+.form #company-id {
+  display: none;
+}
+
+
+// Media Queries ------------------------------------
+@media (max-width:430px) {
+  input, .file-input-label, .file-input-label i {
+    font-size: 10px;
+  }
+}
+
+@media (min-width:769px){
+  section, .form {
+    width: 709px
+  }
+}
+
+@media (min-width:1025px){
+  section, .form {
+    width: 965px
+  }
+}
+
+@media (min-width:1201px){
+
+}

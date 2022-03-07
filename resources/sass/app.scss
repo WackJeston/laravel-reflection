@@ -1,0 +1,20 @@
+
+// Utilities ------------------------------------
+@use "utilities/v";
+@use "utilities/body";
+@use "utilities/header";
+
+// Dashboard ------------------------------------
+@use "dashboard/dashboard-main";
+
+// Login ------------------------------------
+@use "login/login-main";
+
+// Login ------------------------------------
+@use "company/company";
+
+// Font Awesome ---------------------------------
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';

@@ -1,0 +1,13 @@
+@use "../utilities/v";
+
+.login-container {
+  height: 90vh;
+  justify-content: center;
+}
+
+.login-box h2 {
+  position: relative;
+  bottom: 12px;
+  line-height: 0px;
+  margin-left: 5px;
+}
