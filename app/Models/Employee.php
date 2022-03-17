@@ -13,6 +13,6 @@ class Employee extends Model
   protected $guarded = [];
 
   public function company(){
-    return $this->belongsTo('App\Company::class');
+    return $this->belongsTo(App\Company::class);
   }
 }

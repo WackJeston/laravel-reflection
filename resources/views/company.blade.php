@@ -7,7 +7,7 @@
 
   @foreach ($companies as $Company)
   <section class="company-info-section">
-    <img src="" alt="Company Logo" class="company-logo">
+    <img src="#" alt="Company Logo" class="company-logo">
     <div class="company-info">
       <h1>{{ $Company->name }}</h1>
       <h3><a href="{{ $Company->website }}"><i class="fa-solid fa-link"></i>{{ $Company->website }}</a></h3>

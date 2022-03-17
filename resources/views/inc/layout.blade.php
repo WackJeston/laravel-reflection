@@ -27,7 +27,7 @@
         <h1>Laravel</h1>
 
         <a href="/" id="dashboard-button">Dashboard</a>
-        <a href="login">Log Out</a>
+        {{-- <a href="login">Log Out</a> --}}
       </div>
     </header>
 

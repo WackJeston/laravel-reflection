@@ -10,7 +10,3 @@ if (loginPage){
 if (dashboard){
   dashboardButton.style.display = 'none';
 }
-
-if (dashboard){
-  dashboardButton.style.display = 'none';
-}

@@ -23,9 +23,12 @@ return new class extends Migration
             $table->timestamps();
             $table->softDeletes();
 
-            $table->unsignedBigInteger('company_id')->nullable();
-            $table->foreignId('company_id')->references('id')->on('companies')
-              ->onDelete('set null');
+            $table->foreignId('company_id')->constrained('companies');
+
+            // $table->unsignedBigInteger('comps_id')->nullable();
+            // $table->foreignId('comps_id')->references('id')->on('companies')
+            //   ->onDelete('set null');
+
         });
     }
 

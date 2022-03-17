@@ -47,7 +47,7 @@
     <div class="company-list-titles">
       <h2>Companies</h2>
       <div class="small"><i class="fa-solid fa-user-group"></i></div>
-      <div class="small"><i class="fa-solid fa-trash-can"></i></div>
+      {{-- <div class="small"><i class="fa-solid fa-trash-can"></i></div> --}}
       <div class="small"><i class="fa-solid fa-gear"></i></div>
     </div>
     @foreach($companies as $Company)
@@ -55,7 +55,7 @@
       <div class="list-company large"><p>{{ $Company->name }}</p><div></div></div>
       {{-- <div class="list-employees small"><p>{{ Employee::where(['company_id' => $Company->id])->count() }}</p></div> --}}
       <div class="list-employees small"><p>{{ $employees->where('company_id', '=', $Company->id)->count() }}</p></div>
-      <a href="/{{ $Company->id }}" class="remove-comp-button small"><i class="fa-solid fa-xmark"></i></a>
+      {{-- <a href="/{{ $Company->id }}" class="remove-comp-button small"><i class="fa-solid fa-xmark"></i></a> --}}
       <a class="small button-hover" href="company/{{ $Company->id }}"><i class="fa-solid fa-arrow-right"></i></a>
     </div>
     @endforeach
