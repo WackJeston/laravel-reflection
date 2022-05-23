@@ -16,9 +16,9 @@
       </div>
       <div class="input-row">
         <input type="text" name="website" placeholder="Website" id="comp-website">
-        <div class="spacer"></div>
+        {{-- <div class="spacer"></div>
         <label for="comp-logo" class="file-input-label"><p>Upload Logo</p><i class="fa-solid fa-check"></i><i class="fa-solid fa-bars"></i></label>
-        <input type="file" name="logo" value="Logo" id="comp-logo" class="file-input" accept="image/png, image/jpg, image/svg">
+        <input type="file" name="logo" value="Logo" id="comp-logo" class="file-input" accept="image/png, image/jpg, image/svg"> --}}
       </div>
     </div>
     <button type="submit" name="compsubmit" value="compsubmit" id="comp-submit" class="submit">Add Company</button>

@@ -51,6 +51,7 @@ if (dashboard){
   //     e.currentTarget.parentNode.style.display = "none";
   //   })
   // }
+
   completionX.addEventListener("click", function(e){
     e.currentTarget.parentNode.style.display = "none";
   })

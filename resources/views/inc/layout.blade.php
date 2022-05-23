@@ -9,6 +9,9 @@
     <!-- Stylesheet -->
     <link href="{{ URL::asset('../css/app.css') }}" rel="stylesheet" type="text/css" >
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c8712841cc.js" crossorigin="anonymous"></script>
+
     <!-- Google Fonts ------------------------------------>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
